@@ -20,7 +20,7 @@ module.exports = async function (context, req) {
 
     context.res = {
       status: 201,
-      body: users.ops[0]
+      body: users
     }
   } catch (error) {
     context.res = {
