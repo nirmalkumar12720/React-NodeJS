@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FormGroup, FormControl, InputLabel, Input, Button, makeStyles, Typography } from '@material-ui/core';
-import { useHistory, useParams } from 'react-router-dom';
-import { getUsers, editUser } from '../Service/api';
+import { useHistory} from 'react-router-dom';
+// import { getUsers} from '../Service/api';
 
 const initialValue = {
     name: '',
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 const EditUser = () => {
     const [user, setUser] = useState(initialValue);
     const { name, username, email, phone } = user;
-    const { id } = useParams();
+    // const { id } = useParams();
     const classes = useStyles();
     let history = useHistory();
 
@@ -32,12 +32,12 @@ const EditUser = () => {
     }, []);
 
     const loadUserDetails = async() => {
-        const response = await getUsers(id);
-        setUser(response.data);
+        // const response = await getUsers(id);
+        // setUser(response.data);
     }
 
     const editUserDetails = async() => {
-        const response = await editUser(id, user);
+        // const response = await editUser(id, user);
         history.push('/all');
     }
 
