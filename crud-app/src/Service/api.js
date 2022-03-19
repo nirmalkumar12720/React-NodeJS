@@ -5,11 +5,11 @@ const usersUrl = 'http://localhost:8080/users';
 
 export const getUsers = async (id) => {
     id = id || '';
-    return await axios.get(`${usersUrl}/${id}`);
+    return await axios.get('https://nodejs-nirmal.azurewebsites.net/api/GetAllUsers?code=pvVhCToGgTeKx3dYKfp54ukHRtwky64V0oj/Zqz7Wtp1Uv55XOU8mg==');
 }
 
 export const addUser = async (user) => {
-    return await axios.post(`${usersUrl}/add`, user);
+    return await axios.post('https://nodejs-nirmal.azurewebsites.net/api/CreateUsers?code=eaa5PLg9j7Z88dUJKPLrIn3rQxUkzcUByQ9J5VLAHen3NATJBOOYIA==', user);
 }
 
 export const deleteUser = async (id) => {
