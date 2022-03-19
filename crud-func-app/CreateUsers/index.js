@@ -12,10 +12,10 @@ module.exports = async function (context, req) {
 
   const { db, connection } = await createMongoClient()
 
-  const users = db.collection('users')
+  const Users = db.collection('users')
 
   try {
-    const users = await Dishes.insert(user)
+    const users = await Users.insert(user)
     connection.close()
 
     context.res = {
