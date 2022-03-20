@@ -3,6 +3,7 @@ const createMongoClient = require('../shared/mongo')
 
 module.exports = async function (context, req) {
   const { id } = req.params
+  console.log(id,'id')
 
   if (!id) {
     context.res = {
