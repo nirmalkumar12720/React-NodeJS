@@ -13,7 +13,7 @@ export const addUser = async (user) => {
 }
 
 export const deleteUser = async (id) => {
-    return await axios.delete('https://nodejs-nirmal.azurewebsites.net/api/CreateUsers?code=eaa5PLg9j7Z88dUJKPLrIn3rQxUkzcUByQ9J5VLAHen3NATJBOOYIA==', id);
+    return await axios.delete('https://nodejs-nirmal.azurewebsites.net/api/DeleteUser?code=2Boow8RH1R4hO9Dse57KaoiWRjbnOXHeMwFuWjWYaDiUobYSk58IpQ==', id);
 }
 
 export const editUser = async (id, user) => {
