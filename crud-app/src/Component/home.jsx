@@ -18,7 +18,7 @@ const Home = () => {
     const classes = useStyles();
     return (
         <Box className={classes.component}>
-            <Typography variant="h4">Basic CRUD Application by Umair Ghaffar.</Typography>
+            <Typography variant="h4">Basic CRUD Application by Nirmal.</Typography>
            
         </Box>
     )
