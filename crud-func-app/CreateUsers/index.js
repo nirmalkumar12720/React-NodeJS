@@ -3,7 +3,7 @@ const createMongoClient = require('../shared/mongo');
 module.exports = async function (context, req) {
   const user= req.body || {}
 
-  if (pser) {
+  if (user) {
     context.res = {
       status: 400,
       body: 'user data is required! '
@@ -15,7 +15,7 @@ module.exports = async function (context, req) {
   const Users = db.collection('users')
 
   try {
-    const users = await Users.insert(pser)
+    const users = await Users.insert(user)
     connection.close()
 
     context.res = {
