@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 
 const AddUser = () => {
     const [user, setUser] = useState(initialValue);
-    const { name, username, email, phone } = Pser;
+    const { name, username, email, phone } = user;
     const classes = useStyles();
     let history = useHistory();
 
